@@ -111,5 +111,7 @@ jobs:
           done
           if kill -0 "$server_pid" 2>/dev/null; then kill "$server_pid"; cat "$runtime/server.log"; exit 1; fi
           wait "$server_pid"
-          ! grep -E '\[(ERROR|CRITICAL)\]' "$runtime/server.log"
+          if grep -E '\[(ERROR|CRITICAL)\]' "$runtime/server.log"; then
+            exit 1
+          fi
           cat "$runtime/server.log"
