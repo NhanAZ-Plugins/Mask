@@ -1,13 +1,15 @@
 name: Mask
 main: Mask\Main
-version: 2.0.0
-api: [1.0.0, 1.1.0, 1.2.0, 1.2.1, 2.0.0, 3.0.0-ALPHA6, 3.0.0-ALPHA5, 3.0.0-ALPHA4]
+version: 3.0.0
+api: 5.0.0
 load: POSTWORLD
 author: Ghast Noob
+description: Rotates a decorative mob head as a player's mask while preserving their original helmet.
 commands:
   mask:
-    description: "Bật Mặt Nạ Cho Người Chơi"
+    description: Toggle the decorative mask and restore the saved helmet safely.
     permission: "mask.command"
 permissions:
   mask.command:
+    description: Allows using /mask on and /mask off.
     default: op
