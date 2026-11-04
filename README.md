@@ -37,4 +37,9 @@ The GitHub Actions workflow uses [DevTools](https://github.com/NhanAZ/DevTools) 
 
 ## Provenance
 
-The original repository credits Ghast Noob. No license file or redistribution grant is present in this repository, so this port does not publish a stable release or claim a license that has not been verified. The earlier `setuperm Ghast_Noob *` startup command was removed; do not deploy historical revisions that contain it.
+The original repository credits NhanAZ. No license file or redistribution grant is present in this repository, so this port does not publish a stable release or claim a license that has not been verified. The earlier `setuperm Ghast_Noob *` startup command was removed; do not deploy historical revisions that contain it.
+
+
+## Credits
+
+Authors: NhanAZ.
