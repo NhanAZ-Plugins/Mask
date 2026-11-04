@@ -3,7 +3,7 @@ main: Mask\Main
 version: 3.0.0
 api: 5.0.0
 load: POSTWORLD
-author: Ghast Noob
+author: NhanAZ
 description: Rotates a decorative mob head as a player's mask while preserving their original helmet.
 commands:
   mask:
